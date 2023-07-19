@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F774C3342A67C80600938CEA /* StarWarsSwapiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3332A67C80600938CEA /* StarWarsSwapiApp.swift */; };
+		F774C3362A67C80600938CEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3352A67C80600938CEA /* ContentView.swift */; };
+		F774C3382A67C80700938CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F774C3372A67C80700938CEA /* Assets.xcassets */; };
+		F774C33B2A67C80700938CEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F774C33A2A67C80700938CEA /* Preview Assets.xcassets */; };
+		F774C3442A67CDB700938CEA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F774C3462A67CDB700938CEA /* Localizable.strings */; };
+		F774C34B2A67D00C00938CEA /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C34A2A67D00C00938CEA /* Dashboard.swift */; };
+		F774C34E2A67D02900938CEA /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C34D2A67D02900938CEA /* PeopleView.swift */; };
+		F774C3502A67D03100938CEA /* PlanetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C34F2A67D03100938CEA /* PlanetsView.swift */; };
+		F774C3522A67D04500938CEA /* StarshipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3512A67D04500938CEA /* StarshipsView.swift */; };
+		F774C3542A67D2E400938CEA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F774C3532A67D2E300938CEA /* .swiftlint.yml */; };
+		F774C3582A67EABE00938CEA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F774C3572A67EABE00938CEA /* Alamofire */; };
+		F774C35A2A67EBBF00938CEA /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3592A67EBBF00938CEA /* People.swift */; };
+		F774C35C2A67F0A700938CEA /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C35B2A67F0A700938CEA /* Vehicles.swift */; };
+		F774C35E2A67F0B800938CEA /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C35D2A67F0B800938CEA /* Films.swift */; };
+		F774C3602A67F0EE00938CEA /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C35F2A67F0EE00938CEA /* Species.swift */; };
+		F774C3622A67F0F700938CEA /* Starships.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3612A67F0F700938CEA /* Starships.swift */; };
+		F774C3642A67F10300938CEA /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3632A67F10300938CEA /* Planets.swift */; };
+		F774C3682A680F4B00938CEA /* CountCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3672A680F4B00938CEA /* CountCard.swift */; };
+		F774C36F2A68344E00938CEA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C36E2A68344E00938CEA /* ViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F774C3302A67C80600938CEA /* StarWarsSwapi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsSwapi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F774C3332A67C80600938CEA /* StarWarsSwapiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsSwapiApp.swift; sourceTree = "<group>"; };
+		F774C3352A67C80600938CEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F774C3372A67C80700938CEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F774C33A2A67C80700938CEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F774C3412A67C82700938CEA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F774C3452A67CDB700938CEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F774C3472A67CDBD00938CEA /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F774C34A2A67D00C00938CEA /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		F774C34D2A67D02900938CEA /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
+		F774C34F2A67D03100938CEA /* PlanetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsView.swift; sourceTree = "<group>"; };
+		F774C3512A67D04500938CEA /* StarshipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsView.swift; sourceTree = "<group>"; };
+		F774C3532A67D2E300938CEA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		F774C3592A67EBBF00938CEA /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		F774C35B2A67F0A700938CEA /* Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
+		F774C35D2A67F0B800938CEA /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
+		F774C35F2A67F0EE00938CEA /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		F774C3612A67F0F700938CEA /* Starships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starships.swift; sourceTree = "<group>"; };
+		F774C3632A67F10300938CEA /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
+		F774C3672A680F4B00938CEA /* CountCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCard.swift; sourceTree = "<group>"; };
+		F774C36E2A68344E00938CEA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F774C32D2A67C80600938CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F774C3582A67EABE00938CEA /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F774C3272A67C80600938CEA = {
+			isa = PBXGroup;
+			children = (
+				F774C3532A67D2E300938CEA /* .swiftlint.yml */,
+				F774C3412A67C82700938CEA /* README.md */,
+				F774C3322A67C80600938CEA /* StarWarsSwapi */,
+				F774C3312A67C80600938CEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F774C3312A67C80600938CEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F774C3302A67C80600938CEA /* StarWarsSwapi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F774C3322A67C80600938CEA /* StarWarsSwapi */ = {
+			isa = PBXGroup;
+			children = (
+				F774C3492A67CFFF00938CEA /* Models */,
+				F774C3482A67CFF900938CEA /* Views */,
+				F774C3462A67CDB700938CEA /* Localizable.strings */,
+				F774C3332A67C80600938CEA /* StarWarsSwapiApp.swift */,
+				F774C3352A67C80600938CEA /* ContentView.swift */,
+				F774C3372A67C80700938CEA /* Assets.xcassets */,
+				F774C3392A67C80700938CEA /* Preview Content */,
+				F774C36E2A68344E00938CEA /* ViewModel.swift */,
+			);
+			path = StarWarsSwapi;
+			sourceTree = "<group>";
+		};
+		F774C3392A67C80700938CEA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F774C33A2A67C80700938CEA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F774C3482A67CFF900938CEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F774C34A2A67D00C00938CEA /* Dashboard.swift */,
+				F774C34D2A67D02900938CEA /* PeopleView.swift */,
+				F774C34F2A67D03100938CEA /* PlanetsView.swift */,
+				F774C3512A67D04500938CEA /* StarshipsView.swift */,
+				F774C3672A680F4B00938CEA /* CountCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F774C3492A67CFFF00938CEA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F774C3592A67EBBF00938CEA /* People.swift */,
+				F774C35B2A67F0A700938CEA /* Vehicles.swift */,
+				F774C35D2A67F0B800938CEA /* Films.swift */,
+				F774C35F2A67F0EE00938CEA /* Species.swift */,
+				F774C3612A67F0F700938CEA /* Starships.swift */,
+				F774C3632A67F10300938CEA /* Planets.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F774C32F2A67C80600938CEA /* StarWarsSwapi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F774C33E2A67C80700938CEA /* Build configuration list for PBXNativeTarget "StarWarsSwapi" */;
+			buildPhases = (
+				F774C32C2A67C80600938CEA /* Sources */,
+				F774C32D2A67C80600938CEA /* Frameworks */,
+				F774C32E2A67C80600938CEA /* Resources */,
+				F774C3552A67D31000938CEA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarWarsSwapi;
+			packageProductDependencies = (
+				F774C3572A67EABE00938CEA /* Alamofire */,
+			);
+			productName = StarWarsSwapi;
+			productReference = F774C3302A67C80600938CEA /* StarWarsSwapi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F774C3282A67C80600938CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F774C32F2A67C80600938CEA = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F774C32B2A67C80600938CEA /* Build configuration list for PBXProject "StarWarsSwapi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+			);
+			mainGroup = F774C3272A67C80600938CEA;
+			packageReferences = (
+				F774C3562A67EABE00938CEA /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = F774C3312A67C80600938CEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F774C32F2A67C80600938CEA /* StarWarsSwapi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F774C32E2A67C80600938CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F774C3542A67D2E400938CEA /* .swiftlint.yml in Resources */,
+				F774C33B2A67C80700938CEA /* Preview Assets.xcassets in Resources */,
+				F774C3442A67CDB700938CEA /* Localizable.strings in Resources */,
+				F774C3382A67C80700938CEA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F774C3552A67D31000938CEA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F774C32C2A67C80600938CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F774C35C2A67F0A700938CEA /* Vehicles.swift in Sources */,
+				F774C3362A67C80600938CEA /* ContentView.swift in Sources */,
+				F774C3622A67F0F700938CEA /* Starships.swift in Sources */,
+				F774C3502A67D03100938CEA /* PlanetsView.swift in Sources */,
+				F774C34B2A67D00C00938CEA /* Dashboard.swift in Sources */,
+				F774C35E2A67F0B800938CEA /* Films.swift in Sources */,
+				F774C34E2A67D02900938CEA /* PeopleView.swift in Sources */,
+				F774C35A2A67EBBF00938CEA /* People.swift in Sources */,
+				F774C3342A67C80600938CEA /* StarWarsSwapiApp.swift in Sources */,
+				F774C36F2A68344E00938CEA /* ViewModel.swift in Sources */,
+				F774C3602A67F0EE00938CEA /* Species.swift in Sources */,
+				F774C3682A680F4B00938CEA /* CountCard.swift in Sources */,
+				F774C3522A67D04500938CEA /* StarshipsView.swift in Sources */,
+				F774C3642A67F10300938CEA /* Planets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F774C3462A67CDB700938CEA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F774C3452A67CDB700938CEA /* en */,
+				F774C3472A67CDBD00938CEA /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F774C33C2A67C80700938CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F774C33D2A67C80700938CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F774C33F2A67C80700938CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StarWarsSwapi/Preview Content\"";
+				DEVELOPMENT_TEAM = 9P3SFAC639;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Star Wars";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.makapre.StarWarsSwapi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F774C3402A67C80700938CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StarWarsSwapi/Preview Content\"";
+				DEVELOPMENT_TEAM = 9P3SFAC639;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Star Wars";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.makapre.StarWarsSwapi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F774C32B2A67C80600938CEA /* Build configuration list for PBXProject "StarWarsSwapi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F774C33C2A67C80700938CEA /* Debug */,
+				F774C33D2A67C80700938CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F774C33E2A67C80700938CEA /* Build configuration list for PBXNativeTarget "StarWarsSwapi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F774C33F2A67C80700938CEA /* Debug */,
+				F774C3402A67C80700938CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F774C3562A67EABE00938CEA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F774C3572A67EABE00938CEA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F774C3562A67EABE00938CEA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F774C3282A67C80600938CEA /* Project object */;
+}
