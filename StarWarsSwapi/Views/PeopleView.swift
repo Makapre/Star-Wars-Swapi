@@ -10,6 +10,7 @@ import Alamofire
 
 struct PeopleView: View {
     @ObservedObject var viewModel = PeopleViewModel()
+    @State private var showSheet = false
 
     var body: some View {
         NavigationView {
@@ -27,9 +28,12 @@ struct PeopleView: View {
                 }
             }
             .navigationTitle("People")
+            .sheet(isPresented: $showSheet) {
+                Settings()
+            }
             .toolbar {
                 Button {
-                    print("pressed")
+                    showSheet.toggle()
                 } label: {
                     Image(systemName: "gear")
                 }

@@ -13,6 +13,7 @@
 		F72044FD2A686826004F45C5 /* PlanetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72044FC2A686826004F45C5 /* PlanetView.swift */; };
 		F72044FF2A6868A6004F45C5 /* StarshipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72044FE2A6868A6004F45C5 /* StarshipsViewModel.swift */; };
 		F72045012A68690C004F45C5 /* StarshipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72045002A68690C004F45C5 /* StarshipView.swift */; };
+		F72045032A687982004F45C5 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72045022A687982004F45C5 /* Settings.swift */; };
 		F774C3342A67C80600938CEA /* StarWarsSwapiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3332A67C80600938CEA /* StarWarsSwapiApp.swift */; };
 		F774C3362A67C80600938CEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3352A67C80600938CEA /* ContentView.swift */; };
 		F774C3382A67C80700938CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F774C3372A67C80700938CEA /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		F72044FC2A686826004F45C5 /* PlanetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetView.swift; sourceTree = "<group>"; };
 		F72044FE2A6868A6004F45C5 /* StarshipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsViewModel.swift; sourceTree = "<group>"; };
 		F72045002A68690C004F45C5 /* StarshipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipView.swift; sourceTree = "<group>"; };
+		F72045022A687982004F45C5 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F774C3302A67C80600938CEA /* StarWarsSwapi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsSwapi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F774C3332A67C80600938CEA /* StarWarsSwapiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsSwapiApp.swift; sourceTree = "<group>"; };
 		F774C3352A67C80600938CEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				F72044F82A6865EC004F45C5 /* CharacterView.swift */,
 				F72044FC2A686826004F45C5 /* PlanetView.swift */,
 				F72045002A68690C004F45C5 /* StarshipView.swift */,
+				F72045022A687982004F45C5 /* Settings.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				F774C3362A67C80600938CEA /* ContentView.swift in Sources */,
 				F774C3622A67F0F700938CEA /* Starships.swift in Sources */,
 				F774C3502A67D03100938CEA /* PlanetsView.swift in Sources */,
+				F72045032A687982004F45C5 /* Settings.swift in Sources */,
 				F72044F92A6865EC004F45C5 /* CharacterView.swift in Sources */,
 				F774C35E2A67F0B800938CEA /* Films.swift in Sources */,
 				F774C34E2A67D02900938CEA /* PeopleView.swift in Sources */,

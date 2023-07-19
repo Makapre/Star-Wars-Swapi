@@ -10,6 +10,7 @@ import Alamofire
 
 struct StarshipsView: View {
     @ObservedObject var viewModel = StarshipsViewModel()
+    @State private var showSheet = false
 
     var body: some View {
         NavigationView {
@@ -27,9 +28,12 @@ struct StarshipsView: View {
                 }
             }
             .navigationTitle("Starships")
+            .sheet(isPresented: $showSheet) {
+                Settings()
+            }
             .toolbar {
                 Button {
-                    print("pressed")
+                    showSheet.toggle()
                 } label: {
                     Image(systemName: "gear")
                 }

@@ -10,11 +10,7 @@ import Alamofire
 
 struct PlanetsView: View {
     @ObservedObject var viewModel = PlanetsViewModel()
-    @AppStorage("diameter") private var diameter = ""
     @State private var showSheet = false
-    @State private var segmentSelection = "Earth"
-
-    var segments = ["Earth", "Moon", "Sun"]
 
     var body: some View {
         NavigationView {
@@ -33,24 +29,7 @@ struct PlanetsView: View {
             }
             .navigationTitle("Planets")
             .sheet(isPresented: $showSheet) {
-                VStack {
-                    Text("Which object to compare with?")
-                    Picker("Which object to compare with?", selection: $segmentSelection) {
-                        ForEach(segments, id: \.self) {
-                            Text($0)
-                        }
-                    }
-                    .padding()
-                    .pickerStyle(.segmented)
-                    .presentationDetents([.medium])
-                    .presentationDragIndicator(.visible)
-                }
-                .onDisappear {
-                    diameter = segmentSelection
-                }
-            }
-            .onAppear {
-                segmentSelection = diameter
+                Settings()
             }
             .toolbar {
                 Button {

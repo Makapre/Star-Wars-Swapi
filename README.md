@@ -7,23 +7,23 @@
 ### MVP
 
 - 3 Tabs
-    - People
-    - Planets
-        - Comparisson w/ `Earth`, `Moon` oder `Sun`
-        - 2 Circle in comparisson to above
-        - Choice of comparisson object
+    - ✅ People
+    - ✅ Planets
+        - ✅ Comparisson w/ `Earth`, `Moon` oder `Sun`
+        - ✅ 2 Circle in comparisson to above
     - Starships
         - Rating w/ stars
 - Preferences
     - Wookie language `Shyriiwook`
         - `German` as placeholder
     - Show costs in `Galactial Credits` or `Euro`
-    - As toolbar button
+    - ✅ Choice of comparisson object
+    - ✅ As toolbar button
 - Icon
-- Manage pagination
 
 ### Optional
 
+- Manage pagination
 - Additional Tab
     - Dashboard
         - Cards w/ count of
