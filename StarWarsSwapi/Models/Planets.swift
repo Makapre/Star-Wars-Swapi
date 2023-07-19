@@ -12,7 +12,7 @@ struct Planets: Codable {
     var results: [Planet]
 }
 
-struct Planet: Codable {
+struct Planet: Codable, Hashable {
     var name: String
     var diameter: String
 }

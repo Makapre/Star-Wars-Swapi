@@ -10,11 +10,9 @@ import Alamofire
 
 @main
 struct StarWarsSwapiApp: App {
-    @ObservedObject var viewModel = ViewModel()
-
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: viewModel)
+            ContentView()
         }
     }
 }

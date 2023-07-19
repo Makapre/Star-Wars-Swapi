@@ -9,13 +9,24 @@ import SwiftUI
 import Alamofire
 
 struct PeopleView: View {
-    @AppStorage("people") private var people = 0
+    @ObservedObject var viewModel = PeopleViewModel()
 
     var body: some View {
         NavigationView {
             VStack {
-                Text(String(people))
+                if viewModel.people.isEmpty {
+                    ProgressView()
+                } else {
+                    List {
+                        ForEach(viewModel.people, id: \.self) { character in
+                            NavigationLink(destination: CharacterView(character: character)) {
+                                Text(character.name)
+                            }
+                        }
+                    }
+                }
             }
+            .navigationTitle("People")
             .toolbar {
                 Button {
                     print("pressed")

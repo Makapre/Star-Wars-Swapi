@@ -6,15 +6,7 @@
 
 ### MVP
 
-- 4 Tabs
-    - Dashboard
-        - Cards w/ count of
-            - People
-            - Planets
-            - Starships
-            - Vehicles
-            - Species
-        - Movies as List or similiar
+- 3 Tabs
     - People
     - Planets
         - Comparisson w/ `Earth`, `Moon` oder `Sun`
@@ -32,6 +24,15 @@
 
 ### Optional
 
+- Additional Tab
+    - Dashboard
+        - Cards w/ count of
+            - People
+            - Planets
+            - Starships
+            - Vehicles
+            - Species
+        - Movies as List or similiar
 - Preferences
     - Color Theme
         - `Sith` or `Jedi`

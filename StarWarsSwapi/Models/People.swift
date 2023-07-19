@@ -13,6 +13,14 @@ struct People: Codable {
     var results: [Character]
 }
 
-struct Character: Codable {
+struct Character: Codable, Hashable {
     var name: String
+    var birthYear: String
+    var gender: String
+
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+        case gender = "gender"
+        case birthYear = "birth_year"
+    }
 }

@@ -9,13 +9,24 @@ import SwiftUI
 import Alamofire
 
 struct StarshipsView: View {
-    @AppStorage("starships") private var starships = 0
+    @ObservedObject var viewModel = StarshipsViewModel()
 
     var body: some View {
         NavigationView {
             VStack {
-                Text(String(starships))
+                if viewModel.starships.isEmpty {
+                    ProgressView()
+                } else {
+                    List {
+                        ForEach(viewModel.starships, id: \.self) { starship in
+                            NavigationLink(destination: StarshipView(starship: starship)) {
+                                Text(starship.name)
+                            }
+                        }
+                    }
+                }
             }
+            .navigationTitle("Starships")
             .toolbar {
                 Button {
                     print("pressed")

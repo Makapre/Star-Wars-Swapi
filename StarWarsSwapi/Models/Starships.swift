@@ -12,7 +12,7 @@ struct Starships: Codable {
     var results: [Starship]
 }
 
-struct Starship: Codable {
+struct Starship: Codable, Hashable {
     var name: String
     var model: String
     var manufacturer: String

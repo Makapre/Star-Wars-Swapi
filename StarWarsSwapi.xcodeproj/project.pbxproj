@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F72044F52A6861FD004F45C5 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72044F42A6861FD004F45C5 /* PeopleViewModel.swift */; };
+		F72044F92A6865EC004F45C5 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72044F82A6865EC004F45C5 /* CharacterView.swift */; };
+		F72044FB2A6867B3004F45C5 /* PlanetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72044FA2A6867B3004F45C5 /* PlanetsViewModel.swift */; };
+		F72044FD2A686826004F45C5 /* PlanetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72044FC2A686826004F45C5 /* PlanetView.swift */; };
+		F72044FF2A6868A6004F45C5 /* StarshipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72044FE2A6868A6004F45C5 /* StarshipsViewModel.swift */; };
+		F72045012A68690C004F45C5 /* StarshipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72045002A68690C004F45C5 /* StarshipView.swift */; };
 		F774C3342A67C80600938CEA /* StarWarsSwapiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3332A67C80600938CEA /* StarWarsSwapiApp.swift */; };
 		F774C3362A67C80600938CEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3352A67C80600938CEA /* ContentView.swift */; };
 		F774C3382A67C80700938CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F774C3372A67C80700938CEA /* Assets.xcassets */; };
 		F774C33B2A67C80700938CEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F774C33A2A67C80700938CEA /* Preview Assets.xcassets */; };
 		F774C3442A67CDB700938CEA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F774C3462A67CDB700938CEA /* Localizable.strings */; };
-		F774C34B2A67D00C00938CEA /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C34A2A67D00C00938CEA /* Dashboard.swift */; };
 		F774C34E2A67D02900938CEA /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C34D2A67D02900938CEA /* PeopleView.swift */; };
 		F774C3502A67D03100938CEA /* PlanetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C34F2A67D03100938CEA /* PlanetsView.swift */; };
 		F774C3522A67D04500938CEA /* StarshipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3512A67D04500938CEA /* StarshipsView.swift */; };
@@ -24,11 +29,15 @@
 		F774C3602A67F0EE00938CEA /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C35F2A67F0EE00938CEA /* Species.swift */; };
 		F774C3622A67F0F700938CEA /* Starships.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3612A67F0F700938CEA /* Starships.swift */; };
 		F774C3642A67F10300938CEA /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3632A67F10300938CEA /* Planets.swift */; };
-		F774C3682A680F4B00938CEA /* CountCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3672A680F4B00938CEA /* CountCard.swift */; };
-		F774C36F2A68344E00938CEA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C36E2A68344E00938CEA /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F72044F42A6861FD004F45C5 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		F72044F82A6865EC004F45C5 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		F72044FA2A6867B3004F45C5 /* PlanetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewModel.swift; sourceTree = "<group>"; };
+		F72044FC2A686826004F45C5 /* PlanetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetView.swift; sourceTree = "<group>"; };
+		F72044FE2A6868A6004F45C5 /* StarshipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsViewModel.swift; sourceTree = "<group>"; };
+		F72045002A68690C004F45C5 /* StarshipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipView.swift; sourceTree = "<group>"; };
 		F774C3302A67C80600938CEA /* StarWarsSwapi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsSwapi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F774C3332A67C80600938CEA /* StarWarsSwapiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsSwapiApp.swift; sourceTree = "<group>"; };
 		F774C3352A67C80600938CEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,7 +46,6 @@
 		F774C3412A67C82700938CEA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F774C3452A67CDB700938CEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F774C3472A67CDBD00938CEA /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F774C34A2A67D00C00938CEA /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		F774C34D2A67D02900938CEA /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		F774C34F2A67D03100938CEA /* PlanetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsView.swift; sourceTree = "<group>"; };
 		F774C3512A67D04500938CEA /* StarshipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsView.swift; sourceTree = "<group>"; };
@@ -48,8 +56,6 @@
 		F774C35F2A67F0EE00938CEA /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
 		F774C3612A67F0F700938CEA /* Starships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starships.swift; sourceTree = "<group>"; };
 		F774C3632A67F10300938CEA /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
-		F774C3672A680F4B00938CEA /* CountCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCard.swift; sourceTree = "<group>"; };
-		F774C36E2A68344E00938CEA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F72044F32A6861EF004F45C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F72044F42A6861FD004F45C5 /* PeopleViewModel.swift */,
+				F72044FA2A6867B3004F45C5 /* PlanetsViewModel.swift */,
+				F72044FE2A6868A6004F45C5 /* StarshipsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F774C3272A67C80600938CEA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +101,7 @@
 		F774C3322A67C80600938CEA /* StarWarsSwapi */ = {
 			isa = PBXGroup;
 			children = (
+				F72044F32A6861EF004F45C5 /* ViewModel */,
 				F774C3492A67CFFF00938CEA /* Models */,
 				F774C3482A67CFF900938CEA /* Views */,
 				F774C3462A67CDB700938CEA /* Localizable.strings */,
@@ -92,7 +109,6 @@
 				F774C3352A67C80600938CEA /* ContentView.swift */,
 				F774C3372A67C80700938CEA /* Assets.xcassets */,
 				F774C3392A67C80700938CEA /* Preview Content */,
-				F774C36E2A68344E00938CEA /* ViewModel.swift */,
 			);
 			path = StarWarsSwapi;
 			sourceTree = "<group>";
@@ -108,11 +124,12 @@
 		F774C3482A67CFF900938CEA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F774C34A2A67D00C00938CEA /* Dashboard.swift */,
 				F774C34D2A67D02900938CEA /* PeopleView.swift */,
 				F774C34F2A67D03100938CEA /* PlanetsView.swift */,
 				F774C3512A67D04500938CEA /* StarshipsView.swift */,
-				F774C3672A680F4B00938CEA /* CountCard.swift */,
+				F72044F82A6865EC004F45C5 /* CharacterView.swift */,
+				F72044FC2A686826004F45C5 /* PlanetView.swift */,
+				F72045002A68690C004F45C5 /* StarshipView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,20 +247,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72044FF2A6868A6004F45C5 /* StarshipsViewModel.swift in Sources */,
 				F774C35C2A67F0A700938CEA /* Vehicles.swift in Sources */,
+				F72045012A68690C004F45C5 /* StarshipView.swift in Sources */,
 				F774C3362A67C80600938CEA /* ContentView.swift in Sources */,
 				F774C3622A67F0F700938CEA /* Starships.swift in Sources */,
 				F774C3502A67D03100938CEA /* PlanetsView.swift in Sources */,
-				F774C34B2A67D00C00938CEA /* Dashboard.swift in Sources */,
+				F72044F92A6865EC004F45C5 /* CharacterView.swift in Sources */,
 				F774C35E2A67F0B800938CEA /* Films.swift in Sources */,
 				F774C34E2A67D02900938CEA /* PeopleView.swift in Sources */,
 				F774C35A2A67EBBF00938CEA /* People.swift in Sources */,
+				F72044FB2A6867B3004F45C5 /* PlanetsViewModel.swift in Sources */,
 				F774C3342A67C80600938CEA /* StarWarsSwapiApp.swift in Sources */,
-				F774C36F2A68344E00938CEA /* ViewModel.swift in Sources */,
 				F774C3602A67F0EE00938CEA /* Species.swift in Sources */,
-				F774C3682A680F4B00938CEA /* CountCard.swift in Sources */,
 				F774C3522A67D04500938CEA /* StarshipsView.swift in Sources */,
+				F72044F52A6861FD004F45C5 /* PeopleViewModel.swift in Sources */,
 				F774C3642A67F10300938CEA /* Planets.swift in Sources */,
+				F72044FD2A686826004F45C5 /* PlanetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
