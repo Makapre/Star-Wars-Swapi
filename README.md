@@ -6,24 +6,26 @@
 
 ### MVP
 
-- 3 Tabs
+- ✅ 3 Tabs
     - ✅ People
     - ✅ Planets
         - ✅ Comparisson w/ `Earth`, `Moon` oder `Sun`
         - ✅ 2 Circle in comparisson to above
-    - Starships
-        - Rating w/ stars
-- Preferences
-    - Wookie language `Shyriiwook`
-        - `German` as placeholder
-    - Show costs in `Galactial Credits` or `Euro`
-        - Internet says 1 credit is roundabout 1 $, so 1 credit = 0,89 €
+    - ✅ Starships
+        - ✅ w/ Rating
+        - ✅ costs
+- ✅ Preferences
+    - ✅ Show costs in `Galactial Credits` or `Euro`
+        - ✅ Internet says 1 credit is roundabout 1 $, so 1 credit = 0,89 €
     - ✅ Choice of comparisson object
     - ✅ As toolbar button
 - Icon
 
 ### Optional
 
+- Preferences
+    - Wookie language `Shyriiwook`
+        - `German` as placeholder
 - Manage pagination
 - Additional Tab
     - Dashboard
