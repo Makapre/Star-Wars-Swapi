@@ -36,6 +36,7 @@ struct CharacterView: View {
                 }
             }
         }
+        .navigationTitle(character.name)
     }
 }
 

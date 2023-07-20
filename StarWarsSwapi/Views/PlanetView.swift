@@ -21,7 +21,7 @@ func getDiameter(dia: String) -> Double {
 }
 
 struct PlanetView: View {
-    @AppStorage("diameter") private var diameter = ""
+    @AppStorage("diameter") private var diameter = "Earth"
 
     var planet: Planet
 
