@@ -26,34 +26,37 @@ struct PlanetView: View {
     var planet: Planet
 
     var body: some View {
-        VStack {
-            VStack {
-                VStack {
-                    Text(planet.name)
-                    Circle()
-                        .stroke(Color.accentColor, lineWidth: 5)
-                        .frame(width: 110 * getRelation(planetDiameter: planet.diameter), height: 110 * getRelation(planetDiameter: planet.diameter))
+        List {
+            Section(header: Text(planet.name)) {
+                Circle()
+                    .stroke(Color.accentColor, lineWidth: 2)
+                    .frame(width: 100, height: 100)
+                HStack {
+                    Text("Diameter")
+                    Spacer()
                     Text(planet.diameter)
                         .foregroundColor(.red)
                 }
-                VStack {
-                    Text(diameter)
-                    Circle()
-                        .stroke(Color.accentColor, lineWidth: 5)
-                        .frame(width: 110, height: 110)
+            }
+            Section(header: Text(diameter)) {
+                Circle()
+                    .stroke(Color.accentColor, lineWidth: 2)
+                    .frame(width: 100 * getRelation(planetDiameter: planet.diameter), height: 100 * getRelation(planetDiameter: planet.diameter))
+                HStack {
+                    Text("Diameter")
+                    Spacer()
                     Text(String(Int(getDiameter(dia: diameter))))
                         .foregroundColor(.red)
                 }
-                .padding(.top)
             }
-            .padding()
         }
+        .navigationTitle(planet.name)
     }
 
     func getRelation(planetDiameter: String) -> Double {
         let pDiameter = (Double(planetDiameter) ?? 1.0)
         let cDiameter = getDiameter(dia: diameter)
-        return pDiameter < cDiameter ? pDiameter / cDiameter : cDiameter / pDiameter
+        return cDiameter / pDiameter
     }
 }
 

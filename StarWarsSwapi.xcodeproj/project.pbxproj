@@ -18,7 +18,6 @@
 		F774C3362A67C80600938CEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3352A67C80600938CEA /* ContentView.swift */; };
 		F774C3382A67C80700938CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F774C3372A67C80700938CEA /* Assets.xcassets */; };
 		F774C33B2A67C80700938CEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F774C33A2A67C80700938CEA /* Preview Assets.xcassets */; };
-		F774C3442A67CDB700938CEA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F774C3462A67CDB700938CEA /* Localizable.strings */; };
 		F774C34E2A67D02900938CEA /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C34D2A67D02900938CEA /* PeopleView.swift */; };
 		F774C3502A67D03100938CEA /* PlanetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C34F2A67D03100938CEA /* PlanetsView.swift */; };
 		F774C3522A67D04500938CEA /* StarshipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774C3512A67D04500938CEA /* StarshipsView.swift */; };
@@ -46,8 +45,6 @@
 		F774C3372A67C80700938CEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F774C33A2A67C80700938CEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F774C3412A67C82700938CEA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		F774C3452A67CDB700938CEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F774C3472A67CDBD00938CEA /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F774C34D2A67D02900938CEA /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		F774C34F2A67D03100938CEA /* PlanetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsView.swift; sourceTree = "<group>"; };
 		F774C3512A67D04500938CEA /* StarshipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsView.swift; sourceTree = "<group>"; };
@@ -106,7 +103,6 @@
 				F72044F32A6861EF004F45C5 /* ViewModel */,
 				F774C3492A67CFFF00938CEA /* Models */,
 				F774C3482A67CFF900938CEA /* Views */,
-				F774C3462A67CDB700938CEA /* Localizable.strings */,
 				F774C3332A67C80600938CEA /* StarWarsSwapiApp.swift */,
 				F774C3352A67C80600938CEA /* ContentView.swift */,
 				F774C3372A67C80700938CEA /* Assets.xcassets */,
@@ -195,7 +191,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				de,
 			);
 			mainGroup = F774C3272A67C80600938CEA;
 			packageReferences = (
@@ -217,7 +212,6 @@
 			files = (
 				F774C3542A67D2E400938CEA /* .swiftlint.yml in Resources */,
 				F774C33B2A67C80700938CEA /* Preview Assets.xcassets in Resources */,
-				F774C3442A67CDB700938CEA /* Localizable.strings in Resources */,
 				F774C3382A67C80700938CEA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,18 +266,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F774C3462A67CDB700938CEA /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F774C3452A67CDB700938CEA /* en */,
-				F774C3472A67CDBD00938CEA /* de */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F774C33C2A67C80700938CEA /* Debug */ = {

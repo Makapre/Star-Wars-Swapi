@@ -17,11 +17,13 @@ struct Starship: Codable, Hashable {
     var model: String
     var manufacturer: String
     var hyperdriveRating: String
+    var costInCredits: String
 
     enum CodingKeys: String, CodingKey {
         case name = "name"
         case model = "model"
         case manufacturer = "manufacturer"
         case hyperdriveRating = "hyperdrive_rating"
+        case costInCredits = "cost_in_credits"
     }
 }

@@ -21,7 +21,13 @@ struct StarshipsView: View {
                     List {
                         ForEach(viewModel.starships, id: \.self) { starship in
                             NavigationLink(destination: StarshipView(starship: starship)) {
-                                Text(starship.name)
+                                HStack {
+                                    Text(starship.name)
+                                    Spacer()
+                                    if starship.hyperdriveRating != "unknown" {
+                                        Text(starship.hyperdriveRating)
+                                    }
+                                }
                             }
                         }
                     }

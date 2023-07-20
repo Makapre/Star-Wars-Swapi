@@ -11,10 +11,30 @@ struct CharacterView: View {
     var character: Character
 
     var body: some View {
-        VStack {
-            Text(character.name)
-            Text(character.gender)
-            Text(character.birthYear)
+        List {
+            Section(header: Text("General")) {
+                HStack {
+                    Text("Name")
+                    Spacer()
+                    Text(character.name)
+                }
+                HStack {
+                    Text("Birthday year")
+                    Spacer()
+                    Text(character.birthYear)
+                }
+            }
+            Section(header: Text("Gender")) {
+                Text(character.gender)
+                switch character.gender {
+                case "male":
+                    Text("♂")
+                case "female":
+                    Text("♀")
+                default:
+                    Text("🤖")
+                }
+            }
         }
     }
 }

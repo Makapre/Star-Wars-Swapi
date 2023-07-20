@@ -12,15 +12,15 @@ struct ContentView: View {
         TabView {
             PeopleView()
                 .tabItem {
-                    Label("people", systemImage: "person.circle")
+                    Label("People", systemImage: "person.circle")
                 }
             PlanetsView()
                 .tabItem {
-                    Label("planets", systemImage: "moon.stars.circle")
+                    Label("Planets", systemImage: "moon.stars.circle")
                 }
             StarshipsView()
                 .tabItem {
-                    Label("starships", systemImage: "airplane.circle")
+                    Label("Starships", systemImage: "airplane.circle")
                 }
         }
     }
