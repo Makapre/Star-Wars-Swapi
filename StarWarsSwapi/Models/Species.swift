@@ -7,6 +7,7 @@
 
 import Foundation
 
+// maybe useful for future stuff
 struct Species: Codable {
     var count: Int
 }

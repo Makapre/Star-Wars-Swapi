@@ -19,7 +19,7 @@
         - ✅ Internet says 1 credit is roundabout 1 $, so 1 credit = 0,89 €
     - ✅ Choice of comparisson object
     - ✅ As toolbar button
-- Icon
+- ✅ Icon
 
 ### Optional
 
@@ -47,6 +47,7 @@
 - Detail Screen Movie
     - Opening Crawl á la movie
 - LaunchScreen
+- Localization
 
 ## Techstack
 
