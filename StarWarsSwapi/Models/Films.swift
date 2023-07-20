@@ -7,6 +7,7 @@
 
 import Foundation
 
+// maybe useful for future stuff
 struct Films: Codable {
     var count: Int
     var results: [Film]
