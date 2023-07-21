@@ -29,6 +29,7 @@
 - Manage pagination
 - Additional Tab
     - Dashboard
+        - Pie Chart (comes w/ iOS 17)
         - Cards w/ count of
             - People
             - Planets
