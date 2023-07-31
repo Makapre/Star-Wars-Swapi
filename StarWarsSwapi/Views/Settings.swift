@@ -8,20 +8,19 @@
 import SwiftUI
 
 struct Settings: View {
-    @State private var segmentSelectionComparisson = "Earth"
+    @State private var segmentSelectionComparisson = ComparisonPlanets.earth
     @State private var segmentSelectionCurrency = "Credits"
-    @AppStorage("diameter") private var diameter = "Earth"
+    @AppStorage("comparisonPlanet") private var comparisonPlanet = ComparisonPlanets.earth
     @AppStorage("currency") private var currency = "Credits"
 
-    var segmentsComparisson = ["Earth", "Moon", "Sun"]
     var segmentCurrency = ["Credits", "Euro"]
 
     var body: some View {
         VStack {
             Text("Which object to compare with?")
             Picker("Which object to compare with?", selection: $segmentSelectionComparisson) {
-                ForEach(segmentsComparisson, id: \.self) {
-                    Text($0)
+                ForEach(ComparisonPlanets.allCases, id: \.self) {
+                    Text($0.rawValue)
                 }
             }
             .padding()
@@ -39,11 +38,11 @@ struct Settings: View {
             .presentationDragIndicator(.visible)
         }
         .onAppear {
-            segmentSelectionComparisson = diameter
+            segmentSelectionComparisson = comparisonPlanet
             segmentSelectionCurrency = currency
         }
         .onDisappear {
-            diameter = segmentSelectionComparisson
+            comparisonPlanet = segmentSelectionComparisson
             currency = segmentSelectionCurrency
         }
     }

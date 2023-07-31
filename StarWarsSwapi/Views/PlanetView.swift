@@ -7,21 +7,19 @@
 
 import SwiftUI
 
-func getDiameter(dia: String) -> Double {
-    switch dia {
-    case "Earth":
+func getDiameter(for planet: ComparisonPlanets) -> Double {
+    switch planet {
+    case .earth:
         return 12742
-    case "Moon":
+    case .moon:
         return 3474
-    case "Sun":
+    case .sun:
         return 1392700
-    default:
-        return 1
     }
 }
 
 struct PlanetView: View {
-    @AppStorage("diameter") private var diameter = "Earth"
+    @AppStorage("comparisonPlanet") private var comparisonPlanet = ComparisonPlanets.earth
 
     var planet: Planet
 
@@ -38,14 +36,14 @@ struct PlanetView: View {
                         .foregroundColor(.red)
                 }
             }
-            Section(header: Text(diameter)) {
+            Section(header: Text(comparisonPlanet.rawValue)) {
                 Circle()
                     .stroke(Color.accentColor, lineWidth: 2)
                     .frame(width: 100 * getRelation(planetDiameter: planet.diameter), height: 100 * getRelation(planetDiameter: planet.diameter))
                 HStack {
                     Text("Diameter")
                     Spacer()
-                    Text(String(Int(getDiameter(dia: diameter))))
+                    Text(String(Int(getDiameter(for: comparisonPlanet))))
                         .foregroundColor(.red)
                 }
             }
@@ -55,7 +53,7 @@ struct PlanetView: View {
 
     func getRelation(planetDiameter: String) -> Double {
         let pDiameter = (Double(planetDiameter) ?? 1.0)
-        let cDiameter = getDiameter(dia: diameter)
+        let cDiameter = getDiameter(for: comparisonPlanet)
         return cDiameter / pDiameter
     }
 }
