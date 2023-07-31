@@ -20,15 +20,24 @@ func getDiameter(for planet: ComparisonPlanets) -> Double {
 
 struct PlanetView: View {
     @AppStorage("comparisonPlanet") private var comparisonPlanet = ComparisonPlanets.earth
+    private let defaultCircleDiameter: CGFloat = 100
 
     var planet: Planet
+
+    var relationToPlanet: CGFloat {
+        getRelation(planetDiameter: planet.diameter)
+    }
+
+    var comparisonCircleDiameter: CGFloat {
+        defaultCircleDiameter * relationToPlanet
+    }
 
     var body: some View {
         List {
             Section(header: Text(planet.name)) {
                 Circle()
                     .stroke(Color.accentColor, lineWidth: 2)
-                    .frame(width: 100, height: 100)
+                    .frame(width: defaultCircleDiameter, height: defaultCircleDiameter)
                 HStack {
                     Text("Diameter")
                     Spacer()
@@ -37,9 +46,14 @@ struct PlanetView: View {
                 }
             }
             Section(header: Text(comparisonPlanet.rawValue)) {
-                Circle()
-                    .stroke(Color.accentColor, lineWidth: 2)
-                    .frame(width: 100 * getRelation(planetDiameter: planet.diameter), height: 100 * getRelation(planetDiameter: planet.diameter))
+                if relationToPlanet > 4 {
+                    Text("way too big")
+                        .foregroundColor(.yellow)
+                } else {
+                    Circle()
+                        .stroke(Color.accentColor, lineWidth: 2)
+                        .frame(width: comparisonCircleDiameter, height: comparisonCircleDiameter)
+                }
                 HStack {
                     Text("Diameter")
                     Spacer()
@@ -52,7 +66,7 @@ struct PlanetView: View {
     }
 
     func getRelation(planetDiameter: String) -> Double {
-        let pDiameter = (Double(planetDiameter) ?? 1.0)
+        guard let pDiameter = Double(planetDiameter), pDiameter > 0 else { return 1.0 }
         let cDiameter = getDiameter(for: comparisonPlanet)
         return cDiameter / pDiameter
     }
@@ -60,6 +74,6 @@ struct PlanetView: View {
 
 struct PlanetView_Previews: PreviewProvider {
     static var previews: some View {
-        PlanetView(planet: Planet(name: "Earth", diameter: "10000"))
+        PlanetView(planet: Planet(name: "Test Planet", diameter: "3000"))
     }
 }
