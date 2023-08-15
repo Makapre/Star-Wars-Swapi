@@ -13,7 +13,7 @@ struct StarshipsView: View {
     @State private var showSheet = false
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 if viewModel.starships.isEmpty {
                     ProgressView()

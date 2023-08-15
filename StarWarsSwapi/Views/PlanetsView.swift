@@ -13,7 +13,7 @@ struct PlanetsView: View {
     @State private var showSheet = false
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 if viewModel.planets.isEmpty {
                     ProgressView()

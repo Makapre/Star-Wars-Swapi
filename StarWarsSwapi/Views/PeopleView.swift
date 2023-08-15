@@ -13,7 +13,7 @@ struct PeopleView: View {
     @State private var showSheet = false
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 if viewModel.people.isEmpty {
                     ProgressView()
