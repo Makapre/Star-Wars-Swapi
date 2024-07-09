@@ -39,8 +39,6 @@ struct StarshipView: View {
     }
 }
 
-struct StarshipView_Previews: PreviewProvider {
-    static var previews: some View {
-        StarshipView(starship: Starship(name: "test", model: "test", manufacturer: "test", hyperdriveRating: "6.0", costInCredits: "100"))
-    }
+#Preview {
+    StarshipView(starship: Starship(name: "test", model: "test", manufacturer: "test", hyperdriveRating: "6.0", costInCredits: "100"))
 }

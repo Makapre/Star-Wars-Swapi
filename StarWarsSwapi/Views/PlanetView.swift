@@ -20,24 +20,18 @@ func getDiameter(for planet: ComparisonPlanets) -> Double {
 
 struct PlanetView: View {
     @AppStorage("comparisonPlanet") private var comparisonPlanet = ComparisonPlanets.earth
-    private let defaultCircleDiameter: CGFloat = 100
+    private let defaultCircleDiameter: CGFloat = UIScreen.main.bounds.width / 3
 
     var planet: Planet
 
-    var relationToPlanet: CGFloat {
-        getRelation(planetDiameter: planet.diameter)
-    }
-
     var comparisonCircleDiameter: CGFloat {
-        defaultCircleDiameter * relationToPlanet
+        defaultCircleDiameter * getRelation(planetDiameter: planet.diameter)
     }
 
     var body: some View {
         List {
             Section(header: Text(planet.name)) {
-                Circle()
-                    .stroke(Color.accentColor, lineWidth: 2)
-                    .frame(width: defaultCircleDiameter, height: defaultCircleDiameter)
+                PlanetCircleView(radius: defaultCircleDiameter)
                 HStack {
                     Text("Diameter")
                     Spacer()
@@ -46,13 +40,11 @@ struct PlanetView: View {
                 }
             }
             Section(header: Text(comparisonPlanet.rawValue)) {
-                if relationToPlanet > 4 {
+                if comparisonCircleDiameter > UIScreen.main.bounds.width * 0.8 {
                     Text("way too big")
                         .foregroundColor(.yellow)
                 } else {
-                    Circle()
-                        .stroke(Color.accentColor, lineWidth: 2)
-                        .frame(width: comparisonCircleDiameter, height: comparisonCircleDiameter)
+                    PlanetCircleView(radius: comparisonCircleDiameter)
                 }
                 HStack {
                     Text("Diameter")
@@ -72,8 +64,10 @@ struct PlanetView: View {
     }
 }
 
-struct PlanetView_Previews: PreviewProvider {
-    static var previews: some View {
-        PlanetView(planet: Planet(name: "Test Planet", diameter: "3000"))
-    }
+#Preview("Normal") {
+    PlanetView(planet: Planet(name: "Test Planet", diameter: "10000"))
+}
+
+#Preview("Too big") {
+    PlanetView(planet: Planet(name: "Test Planet", diameter: "3000"))
 }

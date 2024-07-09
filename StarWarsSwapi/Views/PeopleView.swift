@@ -11,17 +11,22 @@ import Alamofire
 struct PeopleView: View {
     @ObservedObject var viewModel = PeopleViewModel()
     @State private var showSheet = false
+    @AppStorage("timedOutPeople") private var isTimedOutPeople: Bool = false
 
     var body: some View {
         NavigationStack {
             VStack {
-                if viewModel.people.isEmpty {
-                    ProgressView()
+                if isTimedOutPeople {
+                    NoInternetView(action: viewModel.fetchPeople)
                 } else {
-                    List {
-                        ForEach(viewModel.people, id: \.self) { character in
-                            NavigationLink(destination: CharacterView(character: character)) {
-                                Text(character.name)
+                    if viewModel.people.isEmpty {
+                        ProgressView()
+                    } else {
+                        List {
+                            ForEach(viewModel.people, id: \.self) { character in
+                                NavigationLink(destination: CharacterView(character: character)) {
+                                    Text(character.name)
+                                }
                             }
                         }
                     }
@@ -42,8 +47,6 @@ struct PeopleView: View {
     }
 }
 
-struct People_Previews: PreviewProvider {
-    static var previews: some View {
-        PeopleView()
-    }
+#Preview {
+    PeopleView()
 }

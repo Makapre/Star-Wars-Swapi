@@ -11,21 +11,26 @@ import Alamofire
 struct StarshipsView: View {
     @ObservedObject var viewModel = StarshipsViewModel()
     @State private var showSheet = false
+    @AppStorage("timedOutStarships") private var isTimedOutStarships: Bool = false
 
     var body: some View {
         NavigationStack {
             VStack {
-                if viewModel.starships.isEmpty {
-                    ProgressView()
+                if isTimedOutStarships {
+                    NoInternetView(action: viewModel.fetchStarships)
                 } else {
-                    List {
-                        ForEach(viewModel.starships, id: \.self) { starship in
-                            NavigationLink(destination: StarshipView(starship: starship)) {
-                                HStack {
-                                    Text(starship.name)
-                                    Spacer()
-                                    if starship.hyperdriveRating != "unknown" {
-                                        Text(starship.hyperdriveRating)
+                    if viewModel.starships.isEmpty {
+                        ProgressView()
+                    } else {
+                        List {
+                            ForEach(viewModel.starships, id: \.self) { starship in
+                                NavigationLink(destination: StarshipView(starship: starship)) {
+                                    HStack {
+                                        Text(starship.name)
+                                        Spacer()
+                                        if starship.hyperdriveRating != "unknown" {
+                                            Text(starship.hyperdriveRating)
+                                        }
                                     }
                                 }
                             }
@@ -48,8 +53,6 @@ struct StarshipsView: View {
     }
 }
 
-struct Starships_Previews: PreviewProvider {
-    static var previews: some View {
-        StarshipsView()
-    }
+#Preview {
+    StarshipsView()
 }

@@ -40,8 +40,6 @@ struct CharacterView: View {
     }
 }
 
-struct CharacterView_Previews: PreviewProvider {
-    static var previews: some View {
-        CharacterView(character: Character(name: "Marius", birthYear: "1993", gender: "Male"))
-    }
+#Preview {
+    CharacterView(character: Character(name: "Marius", birthYear: "1993", gender: "Male"))
 }
