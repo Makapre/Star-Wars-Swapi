@@ -42,6 +42,8 @@
 		F72044FE2A6868A6004F45C5 /* StarshipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsViewModel.swift; sourceTree = "<group>"; };
 		F72045002A68690C004F45C5 /* StarshipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipView.swift; sourceTree = "<group>"; };
 		F72045022A687982004F45C5 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F739455E2C3EF50700D6F8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F73945602C3EF5C600D6F8BE /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
 		F774C3302A67C80600938CEA /* StarWarsSwapi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsSwapi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F774C3332A67C80600938CEA /* StarWarsSwapiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsSwapiApp.swift; sourceTree = "<group>"; };
 		F774C3352A67C80600938CEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,9 +87,18 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		F739455F2C3EF5B200D6F8BE /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				F73945602C3EF5C600D6F8BE /* ci_pre_xcodebuild.sh */,
+			);
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
 		F774C3272A67C80600938CEA = {
 			isa = PBXGroup;
 			children = (
+				F739455F2C3EF5B200D6F8BE /* ci_scripts */,
 				F774C3532A67D2E300938CEA /* .swiftlint.yml */,
 				F774C3412A67C82700938CEA /* README.md */,
 				F774C3322A67C80600938CEA /* StarWarsSwapi */,
@@ -106,6 +117,7 @@
 		F774C3322A67C80600938CEA /* StarWarsSwapi */ = {
 			isa = PBXGroup;
 			children = (
+				F739455E2C3EF50700D6F8BE /* Info.plist */,
 				F78AE1822A77EBBB00FF9AD1 /* Helper */,
 				F72044F32A6861EF004F45C5 /* ViewModel */,
 				F774C3492A67CFFF00938CEA /* Models */,
@@ -253,7 +265,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# needs a fix!!\n\n# if [[ \"$(uname -m)\" == arm64 ]]; then\n#   export PATH=\"/opt/homebrew/bin:$PATH\"\n# fi\n\n# if which swiftlint > /dev/null; then\n#  swiftlint\n# else\n#   echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n# fi\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint > /dev/null; then\n  # swiftlint --fix && swiftlint\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -417,7 +429,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"StarWarsSwapi/Preview Content\"";
 				DEVELOPMENT_TEAM = 9P3SFAC639;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarWarsSwapi/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Star Wars";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -450,7 +464,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"StarWarsSwapi/Preview Content\"";
 				DEVELOPMENT_TEAM = 9P3SFAC639;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarWarsSwapi/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Star Wars";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

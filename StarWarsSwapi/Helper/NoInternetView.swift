@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NoInternetView: View {
     var action: () -> Void
-    
+
     var body: some View {
         VStack {
             ContentUnavailableView("Wifi", systemImage: "wifi.exclamationmark", description: Text("No internet available!"))
@@ -26,5 +26,5 @@ struct NoInternetView: View {
 }
 
 #Preview {
-    NoInternetView(){}
+    NoInternetView {}
 }

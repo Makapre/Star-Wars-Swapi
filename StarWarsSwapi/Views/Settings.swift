@@ -12,7 +12,7 @@ struct Settings: View {
     @State private var segmentSelectionCurrency = "Credits"
     @AppStorage("comparisonPlanet") private var comparisonPlanet = ComparisonPlanets.earth
     @AppStorage("currency") private var currency = "Credits"
-    
+
     @Environment(\.openURL) var openURL
 
     private var segmentCurrency = ["Credits", "Euro"]
@@ -31,7 +31,7 @@ struct Settings: View {
                 .pickerStyle(.segmented)
             }
             .padding(.top)
-            
+
             Section("Currency") {
                 Text("Which currency to use?")
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -45,7 +45,7 @@ struct Settings: View {
                 .presentationDetents([.large])
                 .presentationDragIndicator(.visible)
             }
-            
+
             Section("Info") {
                 Text("Developed as a Coding challenge by Marius Preikschat")
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -53,7 +53,7 @@ struct Settings: View {
                     .tint(.blue)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
-            
+
             if let url = URL(string: "https://github.com/Makapre/Star-Wars-Swapi") {
                 Button {
                     openURL(url)

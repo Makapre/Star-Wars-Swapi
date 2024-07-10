@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PlanetCircleView: View {
     let radius: CGFloat
-    
+
     var body: some View {
         Circle()
             .stroke(Color.accentColor, lineWidth: 2)

@@ -18,7 +18,7 @@ class PlanetsViewModel: ObservableObject {
 
     func fetchPlanets() {
         isTimedOutPlanets = false
-        
+
         AF.request("https://swapi.dev/api/planets/") {
             $0.timeoutInterval = 15
         }
