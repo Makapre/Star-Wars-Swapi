@@ -1,6 +1,8 @@
 #  Star Wars Swapi
 
-[swapi.dev](https://swapi.dev/documentation#root)
+‼️ DEPRECATED [swapi.dev](https://swapi.dev/documentation#root)
+
+Unfortunately this api doesn't exist anymore so this app is useless.
 
 ## Ideas
 
